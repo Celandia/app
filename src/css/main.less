@@ -1,0 +1,382 @@
+.main{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    padding-bottom: 0.3rem;
+}
+.recommend{
+    padding-top:0.84rem;
+    box-sizing: content-box;
+    height: 100%;
+    width: 100%;
+}
+.swiper-container{
+    @h:1.5rem;
+    height: @h;
+    overflow: hidden;
+    width:100%;
+
+    .swiper-slide{
+      img{
+        width: 100%;
+        height: auto;
+      }
+    }
+    .swiper-pagination{
+      max-height: 1rem;
+    }
+  }
+
+  .goods-list {
+    padding-bottom: .5rem;
+    // width: 3.75rem;
+    li{
+        height: 1.5rem;
+        overflow: hidden;
+        img{
+          width: 100%;
+          height: auto;
+        }
+      }
+    
+  }
+
+  .homenav{
+    display: flex;
+    width: 3.75rem;
+    padding-bottom: 0.08rem;
+    background-color: #fff;
+    li{
+      flex: 1;
+      text-align:center;
+      img{
+        width: 0.56rem;
+        height: auto;
+      }
+    }
+  }
+  .banner{
+    @w : 3.75rem;
+    width: 3.75rem;
+    height: 3.75rem;
+    .swiper-container{
+      height: 3.75rem;
+    }
+  }
+
+  .new_goods_callout{
+    padding-bottom: 0.5rem;
+  }
+
+  .search_new_top .title{
+    width: 90%;
+    text-align: center;
+    font: 400 .18rem/0.44rem "黑体";
+    color: #b8d75a;
+  }
+
+  .edit{
+    width: 0.4rem;
+    text-align: center;
+    height: .44rem;
+    float: right;
+    font: 400 .14rem/0.44rem "黑体";
+    color: #b8d75a;
+    padding: 0 .1rem 0 0;
+  }
+
+  .mycenter_new_tit {
+    float: left;
+    width: 100%;
+    background: url(../images/success_bg_694c65ea.png) center top no-repeat #abd13e;
+    background-size: cover;
+    height: 1.65rem;
+    position: relative;
+    z-index: 0;
+    text-align: center;
+    .pic{
+      position: relative;
+      z-index: 0;
+      display: inline-block;
+      margin-top: .23rem;
+      p{
+        font-size: .1rem;
+        color: #fff;
+        background: url(../images/mycenter_head_1712f844.png) right top no-repeat;
+        background-size: .64rem;
+        width: .64rem;
+        height: .15rem;
+        line-height: .15rem;
+        padding-right: .08rem;
+        box-sizing: border-box;
+        position: absolute;
+        z-index: 20;
+        left: .03rem;
+        bottom: -.06rem;
+      }
+      em{
+        border: .025rem solid #fff;
+        border-radius: 50%;
+        box-shadow: 0 0 0 0.025rem rgba(255,255,255,.4);
+        position: relative;
+        z-index: 10;
+        display: block;
+        overflow: hidden;
+        background-color: #fff;
+        img{
+          vertical-align: middle;
+          width: .6rem;
+          height: .6rem;
+        }
+      }
+    }
+    .name{
+    font-size: .16rem;
+    color: #fff;
+    line-height: .35rem;
+    }
+    a.experience{
+      background: #96be19;
+      border-radius: 1rem;
+      font-size: .12rem;
+      color: #fff;
+      line-height: .21rem;
+      display: inline-block;
+      padding: 0rem .15rem 0rem .1rem;
+      position: relative;
+      z-index: 0;
+      &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        z-index: 0;
+        right: -.03rem;
+        top: .005rem;
+        width: .2rem;
+        height: .2rem;
+        background-size: 0.19rem;
+        background: url(../images/money_ico_91952d2b.png) right -1.91rem no-repeat;
+      }
+    }
+}
+.order{
+  float: left;
+  width: 100%;
+  position: relative;
+  z-index: 10;
+  margin-top: -.07rem;
+  overflow: hidden;
+  padding-top: .05rem;
+  &::before{
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: 0;
+    left: -10%;
+    top: 0;
+    width: 120%;
+    height: .2rem;
+    border-radius: 50% 50% 0rem 0rem;
+    background-color: #fff;
+  }
+  dl{
+    float: left;
+    width: 100%;
+    background-color: #fff;
+    margin-bottom: .1rem;
+    dt{
+      float: left;
+      width: 100%;
+      position: relative;
+      z-index: 0;
+      padding: 0rem 0rem 0rem .1rem;
+      box-sizing: border-box;
+      p{
+        float: left;
+        font-size: .15rem;
+        color: #333;
+        line-height: .44rem;
+      }
+      a{
+        float: right;
+        font-size: .12rem;
+        color: #999;
+        line-height: .44rem;
+        padding-right: .2rem;
+        background: url(../images/arrow_new_8703fbf0.png) right .16rem no-repeat;
+        background-size: .15rem;
+      }
+      &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        z-index: 0;
+        left: -50%;
+        bottom: 0;
+        width: 200%;
+        height: 1px;
+        background: #ddd;
+        -webkit-transform: scale(0.5);
+        transform: scale(0.5);
+      }
+    }
+    dd{
+      width: 100%;
+      display: flex;
+      a {
+        display: block;
+        -webkit-box-flex: 1;
+        -webkit-flex: 1;
+        -ms-flex: 1;
+        flex: 1;
+        width: 0;
+        text-align: center;
+        position: relative;
+        z-index: 0;
+        padding: .07rem 0;
+        img{
+          width: .37rem;
+          height: .37rem;
+          vertical-align: middle;
+        }
+      }
+    }
+  }
+}
+.img{
+  img{
+    width: 100%;
+    height: auto;
+  }
+}
+.outbtn {
+  float: left;
+  width: 100%;
+  text-align: center;
+  padding: .1rem 0rem .6rem;
+ a {
+    width: .96rem;
+    line-height: .36rem;
+    height: .36rem;
+    font-size: .16rem;
+    color: #abd13e;
+    border: 1px solid #abd13e;
+    border-radius: .04rem;
+    display: inline-block;
+}
+}
+
+.orderlist{
+  margin-bottom: 0.8rem;
+  padding: 0.44rem 0rem 0rem 0rem;
+  dl{
+    float: left;
+    width: 100%;
+    background-color: #fff;
+    margin-bottom: .1rem;
+    a.addre{
+      float: left;
+      width: 100%;
+      padding: .15rem .24rem .15rem .3rem;
+      box-sizing: border-box;
+      position: relative;
+      z-index: 0;
+        p.text{
+          float: left;
+          width: 100%;
+          font: 400 .13rem/0.2rem "黑体";
+          color: #333;
+          margin-top: .1rem;
+          position: relative;
+          z-index: 0;
+        }
+
+        &::after {
+          content: "";
+          position: absolute;
+          z-index: 20;
+          right: .02rem;
+          top: 50%;
+          margin-top: -.1rem;
+          width: .2rem;
+          height: .2rem;
+          background: url(../images/cartnew_arrow_416ac742.png) .04rem .045rem no-repeat;
+          background-size: .08rem;
+      }
+    }
+
+
+
+    dt{
+      float: left;
+      width: 100%;
+      em{
+        float: left;
+        font: 400 .15rem/0.44rem "黑体";
+        color: #333;
+        margin-left: .1rem;
+      }
+    }
+    dd {
+      float: left;
+      width: 100%;
+      background-color: #fafafa;
+      a {
+        float: left;
+        width: 100%;
+        padding: .1rem .1rem .1rem 0rem;
+        box-sizing: border-box;
+      }
+    p {
+      float: right;
+      font: 400 .13rem/0.3rem "黑体";
+      color: #666;
+      padding-right: .15rem;
+      margin-top: .15rem;
+    }
+    ul{
+      margin-right: .35rem;
+      li{
+        float: left;
+        margin-left: .1rem;
+        img{
+          width: .6rem;
+          height: .6rem;
+        }
+      }
+    }
+  }
+    
+  }
+}
+
+.pay{
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  position: fixed;
+  min-width: 3.2rem;
+  z-index: 80;
+  background-color: #fff;
+  box-sizing: border-box;
+  p{
+    float: left;
+    font-size: .15rem;
+    line-height: .2rem;
+    color: #333;
+    padding: .06rem 0rem 0rem .1rem;
+    span {
+      font-size: .15rem;
+      color: #ff9600;
+    }
+  }
+  a{
+    float: right;
+    font: 400 .15rem/0.49rem "黑体";
+    color: #fff;
+    background-color: #fb9600;
+    text-align: center;
+    width: 1.4rem;
+  }
+}
